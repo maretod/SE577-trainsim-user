@@ -9,10 +9,7 @@
   <packaging>pom</packaging>
 
   <modules>
-      <module>trainsim-itinerary</module>
       <module>trainsim-user</module>
-      <module>trainsim-client</module>
-      <module>trainsim-usercart</module>
   </modules>
 
   <build>

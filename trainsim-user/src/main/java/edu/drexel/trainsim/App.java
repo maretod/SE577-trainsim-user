@@ -4,8 +4,6 @@ import com.google.gson.GsonBuilder;
 import com.google.inject.Guice;
 import com.zaxxer.hikari.HikariConfig;
 
-import org.sql2o.Sql2o;
-
 import edu.drexel.trainsim.db.DatabaseModule;
 import edu.drexel.trainsim.web.UserLoginController;
 import io.javalin.Javalin;
@@ -13,9 +11,6 @@ import io.javalin.plugin.json.JavalinJson;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        // Wait until OTP is fully initilized
-        // TOOD: There are certainly better ways to do this.
-        Thread.sleep(2000);
 
         // Database
         var hikari = new HikariConfig();
